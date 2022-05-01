@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1794.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard_admin.BoardController">
+   <children>
+      <Text fill="#051bdd" layoutX="565.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of the Student">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="139.0" layoutY="51.0" prefHeight="277.0" prefWidth="1009.0">
+        <columns>
+          <TableColumn fx:id="txtname" prefWidth="63.0" text="Name" />
+          <TableColumn fx:id="txtsurname" text="Surname" />
+            <TableColumn fx:id="txtsex" prefWidth="56.0" text="Sex" />
+            <TableColumn fx:id="txtdatebirth" prefWidth="91.0" text="Datebirth" />
+            <TableColumn fx:id="txtplace" prefWidth="97.0" text="Placebirth" />
+            <TableColumn fx:id="txtparent" prefWidth="109.0" text="Parent's name" />
+            <TableColumn fx:id="txtaddress" prefWidth="102.0" text="Address" />
+            <TableColumn fx:id="txtdivision" prefWidth="94.0" text="Division" />
+            <TableColumn fx:id="txtregion" prefWidth="92.0" text="Region" />
+            <TableColumn fx:id="txtnationality" prefWidth="112.0" text="Nationality" />
+            <TableColumn fx:id="txtstatus" prefWidth="120.0" text="Status" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table_n" layoutX="317.0" layoutY="381.0" prefHeight="211.0" prefWidth="838.0">
+        <columns>
+          <TableColumn prefWidth="332.0" text="NOTES">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="OL LEVEL">
+                     <columns>
+                        <TableColumn fx:id="txtmaths_ol" prefWidth="75.0" text="Maths" />
+                        <TableColumn fx:id="txtphysics_ol" prefWidth="75.0" text="Physics" />
+                        <TableColumn fx:id="txtchemistry_ol" prefWidth="75.0" text="Chemistry" />
+                        <TableColumn fx:id="txtcomputer_ol" prefWidth="75.0" text="Computer" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="AL LEVEL">
+                     <columns>
+                        <TableColumn fx:id="txtmaths_al" prefWidth="75.0" text="Maths" />
+                        <TableColumn fx:id="txtphysics_al" prefWidth="75.0" text="Physics" />
+                        <TableColumn fx:id="txtchemistry_al" prefWidth="75.0" text="Chemistry" />
+                        <TableColumn fx:id="txtcomputer_al" prefWidth="75.0" text="Computer" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="txttechnical" prefWidth="120.0" text="Cycles" />
+            <TableColumn fx:id="txtengineer" prefWidth="117.0" text="Department" />
+        </columns>
+      </TableView>
+      <Text fill="#051bdd" layoutX="585.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of the Notes">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

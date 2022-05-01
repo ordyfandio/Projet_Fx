@@ -1,0 +1,27 @@
+.mainFxmlClass {
+}
+.right_side_pane{
+    -fx-background-color:#242623;
+}
+.h1{
+    -fx-text-align:center;
+}
+.btn_submit{
+    -fx-font-family:gorgia;
+    -fx-padding:8px;
+    -fx-font-style:italic;
+    -fx-font-size:1.2em;
+    cursor: pointer;
+}
+.btn_drop{
+    -fx-font-family:gorgia;
+    -fx-padding:8px;
+    -fx-font-style:italic;
+    -fx-font-size:12px;
+    cursor: pointer;
+    -fx-background-color:#ff0000;
+    -fx-color:#fff;
+}
+
+
+
